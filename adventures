@@ -1,0 +1,224 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My First Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Website</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+    </nav>
+  </header>
+  <main>
+    <p>This is a paragraph on my site.</p>
+  </main>
+  <footer>
+    <p>&copy; 2025 My Website</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+}
+
+header {
+  background: #4CAF50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem;
+}
+// script.js
+console.log("Website loaded!");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adventure with Sanjay</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+<body>
+  <header>
+    <h1>Adventure & Activities with Sanjay</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#activities">Activities</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="about">
+      <h2>About This Website</h2>
+      <p>Welcome to your ultimate guide for adventure and outdoor activities, hosted by Sanjay. Explore thrilling experiences, from trekking to water sports and more!</p>
+    </section>
+
+    <section id="activities">
+      <h2>Our Activities</h2>
+      <ul>
+        <li>Trekking and Hiking</li>
+        <li>Camping in the Wilderness</li>
+        <li>River Rafting and Kayaking</li>
+        <li>Rock Climbing</li>
+        <li>Jungle Safaris</li>
+      </ul>
+      <img src="https://via.placeholder.com/600x300?text=Adventure+Activities" alt="Adventure Activities" style="width:100%; margin-top: 20px;">
+    </section>
+
+    <section id="gallery">
+      <h2>Photo Gallery</h2>
+      <div class="gallery">
+        <a href="https://via.placeholder.com/800x600?text=Trekking" data-lightbox="adventure"><img src="https://via.placeholder.com/200x150?text=Trekking" alt="Trekking"></a>
+        <a href="https://via.placeholder.com/800x600?text=Camping" data-lightbox="adventure"><img src="https://via.placeholder.com/200x150?text=Camping" alt="Camping"></a>
+        <a href="https://via.placeholder.com/800x600?text=Rafting" data-lightbox="adventure"><img src="https://via.placeholder.com/200x150?text=Rafting" alt="Rafting"></a>
+        <a href="https://via.placeholder.com/800x600?text=Climbing" data-lightbox="adventure"><img src="https://via.placeholder.com/200x150?text=Climbing" alt="Climbing"></a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form action="mailto:gauswamisanjay36@gamail.com" method="POST" enctype="text/plain">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Adventure with Sanjay. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+</html>
+
+<!-- style.css -->
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+}
+
+header {
+  background-color: #2e8b57;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+form {
+  background: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-width: 500px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #2e8b57;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #246b46;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gallery img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+</style>
+
+<!-- script.js -->
+<script>
+console.log("Adventure website loaded successfully by Sanjay!");
+</script>
